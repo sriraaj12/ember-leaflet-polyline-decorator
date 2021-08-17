@@ -17,7 +17,7 @@ export default BaseLayer.extend({
     this._addObservers();
   },
 
-  willDestroyParent() {
+  willDestroy() {
     this._removeObservers();
     this._super(...arguments);
   },
